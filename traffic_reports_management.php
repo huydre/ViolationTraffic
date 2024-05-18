@@ -77,35 +77,35 @@ $result = mysqli_query($con, $query);
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <!-- Form thêm phương tiện ở đây -->
                                                 <div class="mb-3">
-                                                    <label for="license_number" class="form-label">Biển số xe</label>
+                                                    <label for="license_plate" class="form-label">Biển số xe</label>
+                                                    <input type="text" class="form-control" id="license_plate"
+                                                        name="license_plate">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="license_plate" class="form-label">Số giấy phép lái xe</label>
                                                     <input type="text" class="form-control" id="license_number"
                                                         name="license_number">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="driver_name" class="form-label">Lỗi vi phạm</label>
-                                                    <input type="text" class="form-control" id="driver_name"
-                                                        name="driver_name">
+                                                    <label for="violation_type" class="form-label">Lỗi vi phạm</label>
+                                                    <input type="text" class="form-control" id="violation_type"
+                                                        name="violation_type">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="issuing_authority" class="form-label">Số bằng lái</label>
-                                                    <input type="text" class="form-control" id="issuing_authority" name="issuing_authority">
+                                                    <label for="fine" class="form-label">Số tiền phạt</label>
+                                                    <input type="text" class="form-control" id="fine"
+                                                        name="fine">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="date_of_issue" class="form-label">Số tiền phạt</label>
-                                                    <input type="text" class="form-control" id="date_of_issue"
-                                                        name="date_of_issue">
+                                                    <label for="location" class="form-label">Địa điểm</label>
+                                                    <input type="text" class="form-control" id="location"
+                                                        name="location">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="date_of_expiry" class="form-label">Địa điểm</label>
-                                                    <input type="text" class="form-control" id="date_of_expiry"
-                                                        name="date_of_expiry">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="date_of_expiry" class="form-label">Ngày vi phạm</label>
-                                                    <input type="date" class="form-control" id="date_of_expiry"
-                                                        name="date_of_expiry">
+                                                    <label for="report_date" class="form-label">Ngày vi phạm</label>
+                                                    <input type="date" class="form-control" id="report_date"
+                                                        name="report_date">
                                                 </div>
 
                                             </div>
@@ -126,7 +126,7 @@ $result = mysqli_query($con, $query);
                                 <div class="modal-content">
                                     <form class="form-edit">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="editModalLabel">Chỉnh sửa bằng lái</h5>
+                                            <h5 class="modal-title" id="editModalLabel">Chỉnh sửa lỗi vi phạm</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -134,29 +134,35 @@ $result = mysqli_query($con, $query);
                                             <!-- Form thêm phương tiện ở đây -->
                                             <input type="hidden" id="edit-id" name="id">
                                             <div class="mb-3">
-                                                <label for="license_number" class="form-label">Số bằng lái</label>
+                                                <label for="license_plate" class="form-label">Biển số xe</label>
+                                                <input type="text" class="form-control" id="edit_license_plate"
+                                                    name="license_plate">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="license_number" class="form-label">Số giấy phép lái xe</label>
                                                 <input type="text" class="form-control" id="edit_license_number"
                                                     name="license_number">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="driver_name" class="form-label">Họ Tên</label>
-                                                <input type="text" class="form-control" id="edit_driver_name"
-                                                    name="driver_name">
+                                                <label for="violation_type" class="form-label">Lỗi vi phạm</label>
+                                                <input type="text" class="form-control" id="edit_violation_type"
+                                                    name="violation_type">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="issuing_authority" class="form-label">Địa điểm cấp phát</label>
-                                                <input type="text" class="form-control" id="edit_issuing_authority" name="issuing_authority">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="date_of_issue" class="form-label">Ngày cấp</label>
-                                                <input type="date" class="form-control" id="edit_date_of_issue"
-                                                    name="date_of_issue">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="date_of_expiry" class="form-label">Ngày hết hạn</label>
-                                                <input type="date" class="form-control" id="edit_date_of_expiry"
-                                                    name="date_of_expiry">
-                                            </div>
+                                                    <label for="fine" class="form-label">Số tiền phạt</label>
+                                                    <input type="text" class="form-control" id="edit_fine"
+                                                        name="fine">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="location" class="form-label">Địa điểm</label>
+                                                    <input type="text" class="form-control" id="edit_location"
+                                                        name="location">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="report_date" class="form-label">Ngày vi phạm</label>
+                                                    <input type="date" class="form-control" id="edit_report_date"
+                                                        name="report_date">
+                                                </div>
 
                                         </div>
                                         <div class="modal-footer">
@@ -196,9 +202,15 @@ $result = mysqli_query($con, $query);
                                     <td><?php echo $row['license_plate']; ?></td>
                                     <td><?php echo $row['violation_type']; ?></td>
                                     <td><?php echo $row['license_number']; ?></td>
-                                    <td><?php echo $row['fine']; ?></td>
+                                    <td><?php echo number_format($row['fine']); ?></td>
                                     <td><?php echo $row['location']; ?></td>
-                                    <td><?php echo $row['is_payment_done']; ?></td>
+                                    <td><?php 
+                                        if ($row['is_payment_done'] == 0) {
+                                            echo "Chưa thanh toán";
+                                        } else {
+                                            echo "Đã thanh toán";
+                                        }
+                                    ?></td>
                                     <!-- <td><?php echo $row['notes']; ?></td> -->
                                     <td><?php echo $row['report_date']; ?></td>
                                     <td>
@@ -255,8 +267,9 @@ $result = mysqli_query($con, $query);
                 event.preventDefault();
 
                 var formData = $(this).serialize();
+                console.log(formData);
                 $.ajax({
-                    url: "driving-licenses-management/insert-driving-licenses.php",
+                    url: "traffic_reports_management/insert-traffic_reports.php",
                     type: "POST",
                     data: formData,
                     success: function (data) {
@@ -275,11 +288,11 @@ $result = mysqli_query($con, $query);
                 event.preventDefault();
 
                 var id = $(this).data('id');
-                var confirmation = confirm("Bạn có muốn xoá giấy phép lái xe này?");
+                var confirmation = confirm("Bạn có muốn xoá lỗi vi phạm này?");
 
                 if (confirmation) {
                     $.ajax({
-                        url: "driving-licenses-management/delete-driving-licenses.php",
+                        url: "traffic_reports_management/delete-traffic_reports.php",
                         type: "POST",
                         data: { id: id },
                         success: function (data) {
@@ -299,17 +312,18 @@ $result = mysqli_query($con, $query);
                 event.preventDefault();
                 var id = $(this).data('id');
                 $.ajax({
-                    url: "driving-licenses-management/get-driving-licenses.php",
+                    url: "traffic_reports_management/get-traffic_reports.php",
                     type: "POST",
                     data: { id: id },
                     dataType: "json",
                     success: function (data) {
-                        $('#edit-id').val(data.license_id);
-                        $('#edit_license_number').val(data.license_number);
-                        $('#edit_driver_name').val(data.driver_name);
-                        $('#edit_issuing_authority').val(data.issuing_authority);
-                        $('#edit_date_of_issue').val(data.date_of_issue);
-                        $('#edit_date_of_expiry').val(data.date_of_expiry);
+                        $("#edit-id").val(data.report_id);
+                        $("#edit_license_plate").val(data.license_plate);
+                        $("#edit_license_number").val(data.license_number);
+                        $("#edit_violation_type").val(data.violation_type);
+                        $("#edit_fine").val(data.fine);
+                        $("#edit_location").val(data.location);
+                        $("#edit_report_date").val(data.report_date);
                         $('#editModal').modal('show');
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
@@ -324,7 +338,7 @@ $result = mysqli_query($con, $query);
                 event.preventDefault();
                 var formData = $(this).serialize();
                 $.ajax({
-                    url: "driving-licenses-management/update-driving-licenses.php",
+                    url: "traffic_reports_management/update-traffic_reports.php",
                     type: "POST",
                     data: formData,
                     success: function (data) {

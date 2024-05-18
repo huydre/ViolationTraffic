@@ -19,12 +19,12 @@
     </a>
     <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
-        <a href="components-alerts.html">
+        <a href="tra-cuu-qua-bien-so.php">
           <i class="bi bi-circle"></i><span>Tra cứu vi phạm qua biển số</span>
         </a>
       </li>
       <li>
-        <a href="components-accordion.html">
+        <a href="tra-cuu-qua-bien-ban.php">
           <i class="bi bi-circle"></i><span>Tra cứu vi phạm qua số biên bản</span>
         </a>
       </li>
@@ -47,12 +47,6 @@
     <a href="driving-licenses-management.php" class="nav-link <?php echo ($current_page == 'driving-licenses-management.php') ? '' : 'collapsed'; ?>">
       <i class="bi bi-grid"></i>
       <span>Quản lý bằng lái</span>
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link collapsed">
-      <i class="bi bi-grid"></i>
-      <span>Nộp phạt</span>
     </a>
   </li>
 
