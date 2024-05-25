@@ -84,9 +84,6 @@
                     <div class="col-12">
                       <button class="btn btn-primary w-100" type="submit">Đăng nhập</button>
                     </div>
-                    <div class="col-12">
-                      <p class="small mb-0">Chưa có tài khoản? <a href="pages-register.html">Đăng ký</a></p>
-                    </div>
                   </form>
 
                 </div>
